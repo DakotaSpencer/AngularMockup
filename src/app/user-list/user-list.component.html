@@ -1,0 +1,32 @@
+<div>
+    <div class="tableData">
+        <div class="form_and_filters">
+            <a href="/user-form" class="link-light"><button class="btn btn-primary m-2 link-light" type="button">
+                Create New
+            </button></a>
+        </div>
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>USERNAME</th>
+                <th>EMAIL</th>
+                <th>TEAM</th>
+                <th>STATUS</th>
+            </tr>
+
+            <tr *ngFor="let a of agents">  
+                <td>{{ a.Bus_No }}</td>  
+                <td>{{ a.first_name }}</td>  
+                <td>{{ a.last_name }}</td>  
+                <td>{{ a.username }}</td>  
+                <td>{{ a.email }}</td>  
+                <td>{{ a.Team_No }}</td>  
+                <td>{{ a.Status }}</td>  
+            </tr> 
+            <script src="user-list.component.ts"></script>
+        </table>
+    </div>
+    
+</div>

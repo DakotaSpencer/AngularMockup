@@ -1,0 +1,89 @@
+<div>
+    <div class="tableData">
+        <div class="form_and_filters">
+            <form class="formData">
+                <label for="Bus_No">Bus No.</label>
+                <input type="" name="busNo" id="busNo" [(ngModel)]="Bus_No"/>
+                
+                <label for="Agent_No">Agent No.</label>
+                <input type="" name="Agent_No" id="Agent_No" [(ngModel)]="Agent_No" />
+
+                <label for="Team_No">Team No.</label>
+                <input type="" name="Team_No" id="Team_No" [(ngModel)]="Team_No" />
+
+                <label for="username">Username</label>
+                <input type="" name="username" id="username" [(ngModel)]="username" />
+
+                <label for="UserNameDomain">Username Domain</label>
+                <input type="" name="UserNameDomain" id="UserNameDomain" [(ngModel)]="UserNameDomain" />
+
+                <label for="first_name">First Name</label>
+                <input type="" name="first_name" id="first_name" [(ngModel)]="first_name" />
+
+                <label for="middle_name">Middle Name</label>
+                <input type="" name="middle_name" id="middle_name" [(ngModel)]="middle_name" />
+
+                <label for="last_name">Last Name</label>
+                <input type="" name="last_name" id="last_name" [(ngModel)]="last_name" />
+
+                <label for="email">Email</label>
+                <input type="" name="email" id="email" [(ngModel)]="email" />
+
+                <label for="Status">Status</label>
+                <input type="" name="Status" id="Status" [(ngModel)]="Status" />
+
+                <label for="Mod_DateTime">Mod Date Time</label>
+                <input type="" name="Mod_DateTime" id="Mod_DateTime" [(ngModel)]="Mod_DateTime" />
+
+                <label for="TimeZone">Time Zone</label>
+                <input type="" name="TimeZone" id="TimeZone" [(ngModel)]="TimeZone" />
+
+                <label for="EmailRefusalTimeout">Email Refusal Timeout</label>
+                <input type="" name="EmailRefusalTimeout" id="EmailRefusalTimeout" [(ngModel)]="EmailRefusalTimeout" />
+
+                <label for="DocumentRefusalTimeout">Document Refusal Timeout</label>
+                <input type="" name="DocumentRefusalTimeout" id="DocumentRefusalTimeout" [(ngModel)]="DocumentRefusalTimeout" />
+
+                <label for="ChatRefusalTimeout">Chat Refusal Timeout</label>
+                <input type="" name="ChatRefusalTimeout" id="ChatRefusalTimeout" [(ngModel)]="ChatRefusalTimeout" />
+
+                <label for="PhoneCallRefusalTimeout">Phone Call Refusal Timeout</label>
+                <input type="" name="PhoneCallRefusalTimeout" id="PhoneCallRefusalTimeout" [(ngModel)]="PhoneCallRefusalTimeout" />
+
+                <label for="VoiceMailRefusalTimeout">Voice Mail Refusal Timeout</label>
+                <input type="" name="VoiceMailRefusalTimeout" id="VoiceMailRefusalTimeout" [(ngModel)]="VoiceMailRefusalTimeout"/>
+
+                <label for="WorkItemRefusalTimeout">Work Item Refusal Timeout</label>
+                <input type="" name="WorkItemRefusalTimeout" id="WorkItemRefusalTimeout" [(ngModel)]="WorkItemRefusalTimeout" />
+
+                <label for="UseTeamMaxConcurrentChats">Use Team Max Concurrent Chats</label>
+                <input type="" name="UseTeamMaxConcurrentChats" id="UseTeamMaxConcurrentChats" [(ngModel)]="UseTeamMaxConcurrentChats" />
+
+                <label for="MaxConcurrentChats">Max Concurrent Chats</label>
+                <input type="" name="MaxConcurrentChats" id="MaxConcurrentChats" [(ngModel)]="MaxConcurrentChats" />
+
+                <label for="WfmNotificationEnabled">Wfm Notification Enabled</label>
+                <input type="" name="WfmNotificationEnabled" id="WfmNotificationEnabled" [(ngModel)]="WfmNotificationEnabled" />
+
+                <label for="WfmNotificationInterval">Wfm Notification Interval</label>
+                <input type="" name="WfmNotificationInterval" id="WfmNotificationInterval" [(ngModel)]="WfmNotificationInterval" />
+
+                <label for="Billable">Billable</label>
+                <input type="" name="Billable" id="Billable" [(ngModel)]="Billable" />
+
+                <label for="UseTeamMaxEmailInboxCount">Use Team Max Email Inbox Count</label>
+                <input type="" name="UseTeamMaxEmailInboxCount" id="UseTeamMaxEmailInboxCount" [(ngModel)]="UseTeamMaxEmailInboxCount" />
+
+                <label for="MaxEmailInboxCount">Max Email Inbox Count</label>
+                <input type="" name="MaxEmailInboxCount" id="MaxEmailInboxCount" [(ngModel)]="MaxEmailInboxCount" />
+
+                <label for="UserId">User ID</label>
+                <input type="" name="UserId" id="UserId" [(ngModel)]="UserId" />
+
+                <button (click)="saveDataToJSON()" type="submit">Save to JSON</button>
+            </form>
+            <button (click)="postUserData()" type="submit">Submit to Endpoint</button>
+        </div>
+    </div>
+    
+</div>
